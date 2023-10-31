@@ -6,9 +6,8 @@ The Penny Game is a simple Python-based game based on the game [Penny Drop](http
 - [Description](#description)
 - [How to Play](#how-to-play)
 - [Issues](#issues)
-- [Contributing](#contributing)
 - [License](#license)
-- [Things I'm Happy About](#things-i'm-happy-about)
+
 
 ## Description
 The Penny Game is a simple game of chance for two to six players. There must be at least one human player, but the rest can be human or computer players running simple logic. In real life, the game looks like this,
@@ -30,23 +29,22 @@ The Penny Game is a simple game of chance for two to six players. There must be 
 4. Human players will be prompted to roll (or pass if possible). They can also check their score with 's'
 5. After each roll, points are added or deduced
 6. The game ends once a player gets rid of all of their pennies
+### Reading the Screen
+After each roll you will see an output that looks something like this 
+
+![Program output showing an example board configuration 1 (X), 2 (○), 3 (○), 4 ( ), 5 (○), 6 ( )](https://github.com/the-eva-a/petting-zoo/assets/149191168/6f866e45-f66c-435a-a549-50fbd6474e61)
+
+The number to the left corresponds to the dice roll. If there is nothing between the parentheses then the slot is empty, a circle indicates that there is one "penny" in the slot, and an X indicates that there has been a "hit" that ends the turn. 
 
 ## Issues
-As the program is still being developed, many things could go wrong; here are a few
-- Sometimes, scoring does not update properly, and you end up with more pennies than you started with
-- I am trying to fine-tune the delay after computer players make their moves, but it can be quite fast or slow
-- It's not very good to look at
-
-## Contributing
-
-Feel free to fork the project. All contributions are welcome, especially notes on things not working as they should.
+While the game seems to be in working order, I cannot say that the text-based interface, game mechanics, or computer players are very fun. It would be nice to come back to this when I have more practice so that I can try to make a more visually interesting and engaging project. 
 
 ## License
 
 This project is licensed under the MIT License. See the `LICENSE` file for more details.
 
-## Key Features I'm Happy About
-Here are a few things this project let me practice:
+**Small Notes: Things I'm Happy About**
+Here are a few key featuress this project let me practice:
 * I learned a lot about getting and handling user input, including redundancies for unwanted inputs
 * I am working hard on creating good function and variable names as well as providing well-commented code
 * This is a very fun warm-up in Python project
