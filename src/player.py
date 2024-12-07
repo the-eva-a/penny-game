@@ -1,3 +1,29 @@
+# player.py
+# This file contains the Player class, which is responsible for managing the 
+# which is responsible for managing virtual players in the penny game. 
+
+# Author: Eva Anderson
+# Created: 10/01/24
+
+# Dependencies:
+# - random
+
+# Usage Example:
+# player = Player(is_human=True)
+# player.announce_hand()
+# roll = player.player_roll()
+# player.add_pennies(3)
+# player.drop_penny()
+
+
+# Class Responsibilities:
+# - Manage individual attributes such as hand size
+#   and player type.
+# - Simulate dice rolls and process player decisions
+#   to reroll or pass.
+# - Provide methods for adding or removing pennies and 
+#   checking win conditions
+
 import random
 
 
@@ -161,3 +187,17 @@ class Player:
         else:
             # Simulate computer's choice (can be adjusted with game logic)
             return random.random() > 0.3
+
+    def check_winner(self):
+        """
+        Check if a player has won and return a boolean. 
+
+        Returns:
+        --------
+        is_winner: bool
+            A flag that denotes if a player has won the game.
+        """
+        if self.hand == 0:
+            return True
+        else:
+            return False
